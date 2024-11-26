@@ -63,7 +63,7 @@ export default function Home() {
         {/* Student Card */}
         <div className="flex flex-col items-center text-center">
           <Image
-            src="/assets/student.jfif" // Add this image to the public/assets directory
+            src="/assets/student.jpg" // Add this image to the public/assets directory
             alt="Student Illustration"
             width={250}
             height={250}
@@ -75,7 +75,7 @@ export default function Home() {
         {/* Teacher Card */}
         <div className="flex flex-col items-center text-center">
           <Image
-            src="/assets/teacher.jfif" // Add this image to the public/assets directory
+            src="/assets/teacher.jpg" // Add this image to the public/assets directory
             alt="Teacher Illustration"
             width={250}
             height={250}
