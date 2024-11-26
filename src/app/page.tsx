@@ -17,10 +17,10 @@ export default function Home() {
       {/* Personal Introduction */}
       <div className="bg-white text-blue-800 rounded-xl p-8 shadow-2xl max-w-3xl text-center space-y-4">
         <p className="text-lg">
-          This is <strong>Mehdi Abbas Nathani</strong>, a passionate Full Stack Developer currently specializing in <strong>Flutter</strong> and exploring modern web technologies like <strong>Next.js</strong>. I'm committed to building innovative and impactful applications.
+          This is <strong>Mehdi Abbas Nathani</strong>, a passionate Full Stack Developer currently specializing in <strong>Flutter</strong> and exploring modern web technologies like <strong>Next.js</strong>. I&apos;m committed to building innovative and impactful applications.
         </p>
         <p className="italic text-sm text-blue-600">
-          "Every line of code is a step toward innovation."
+          &quot;Every line of code is a step toward innovation.&quot;
         </p>
       </div>
 
