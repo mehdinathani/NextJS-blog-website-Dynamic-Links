@@ -1,25 +1,24 @@
-import { Metadata } from 'next';
-import blogData from '@/blogdata';
+import blogData from "@/data/blogdata";
 
-// Define the props for the dynamic route
-interface PageProps {
-    tparams: {
-        slug: string;
-    };
-}
-
-// Generate metadata for the blog post
-export async function generateMetadata({ tparams }: PageProps): Promise<Metadata> {
-    const selectedBlog = blogData.find((blog) => blog.slug === tparams.slug);
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug: string }>;
+}) {
+    const resolvedParams = await params;
+    const selectedBlog = blogData.find((blog) => blog.slug === resolvedParams.slug);
 
     return {
-        title: selectedBlog?.title || 'Blog Post',
-        description: selectedBlog?.content.slice(0, 150) || 'Read our latest blog post.',
+        title: selectedBlog?.title || "Blog Post",
+        description: selectedBlog?.content.slice(0, 150) || "Read our latest blog post.",
     };
 }
 
-export function Page({ tparams }: PageProps) {
-    const selectedBlog = blogData.find((blog) => blog.slug === tparams.slug);
+export default async function Page(props: { params: Promise<{ slug: string }> }) {
+    const resolvedParams = await props.params; // Await the `params` promise
+    const { slug } = resolvedParams;
+
+    const selectedBlog = blogData.find((blog) => blog.slug === slug);
 
     if (!selectedBlog) {
         return <div>Blog not found</div>;
