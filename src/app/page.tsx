@@ -11,13 +11,13 @@ export default function Home() {
 
       {/* Subheading */}
       <p className="text-xl text-blue-200 text-center max-w-2xl leading-relaxed">
-        Discover articles, tutorials, and tips on web development with Next.js and Tailwind CSS. Empower your journey and build smarter, faster, and better applications!
+        Discover articles&#34; tutorials&#34; and tips on web development with Next.js and Tailwind CSS. Empower your journey and build smarter&#34; faster&#34; and better applications!
       </p>
 
       {/* Personal Introduction */}
       <div className="bg-white text-blue-800 rounded-xl p-8 shadow-2xl max-w-3xl text-center space-y-4">
         <p className="text-lg">
-          This is <strong>Mehdi Abbas Nathani</strong>, a passionate Full Stack Developer currently specializing in <strong>Flutter</strong> and exploring modern web technologies like <strong>Next.js</strong>. I&rsquo;m committed to building innovative and impactful applications.
+          This is <strong>Mehdi Abbas Nathani</strong>&#34; a passionate Full Stack Developer currently specializing in <strong>Flutter</strong> and exploring modern web technologies like <strong>Next.js</strong>. I&rsquo;m committed to building innovative and impactful applications.
         </p>
         <p className="italic text-sm text-blue-600">
           "Every line of code is a step toward innovation."
@@ -47,14 +47,14 @@ export default function Home() {
 
       {/* Navigation Links */}
       <div className="flex gap-8">
-        {["About", "Blog", "Contact"].map((item) => (
-          <Link
-            key={item}
-            href={`/${item.toLowerCase()}`}
-            className="bg-blue-600 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"
-          >
-            {item}
-          </Link>
+        {["About" &#34; "Blog"&#34; "Contact"].map((item) => (
+        <Link
+          key={item}
+          href={`/${item.toLowerCase()}`}
+          className="bg-blue-600 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+        >
+          {item}
+        </Link>
         ))}
       </div>
 
