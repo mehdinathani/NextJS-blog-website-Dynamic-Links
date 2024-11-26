@@ -18,7 +18,7 @@ export async function generateMetadata({ tparams }: PageProps): Promise<Metadata
     };
 }
 
-export default function Page({ tparams }: PageProps) {
+export function Page({ tparams }: PageProps) {
     const selectedBlog = blogData.find((blog) => blog.slug === tparams.slug);
 
     if (!selectedBlog) {
