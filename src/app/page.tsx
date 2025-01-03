@@ -5,8 +5,10 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-r from-blue-800 to-purple-800 min-h-screen flex flex-col items-center p-6 space-y-10">
       {/* Heading */}
-      <h1 className="text-6xl font-extrabold text-white text-center drop-shadow-lg">
+      <h1 className="text-6xl font-extrabold text-white text-center drop-shadow-lg cursor-pointer">
+        <Link href="/" className="text-white text-2xl font-bold hover:underline" />
         Welcome to My Blog
+
       </h1>
 
       {/* Subheading */}
